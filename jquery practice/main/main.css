@@ -1,0 +1,109 @@
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #fffbef;
+}
+
+#main {
+  max-width: 920px;
+  margin: 100px auto;
+  padding: 0 20px;
+}
+
+#main .site-title {
+  margin-bottom: 50px;
+}
+
+#main .site-title h1 {
+  font-size: 2rem;
+}
+
+#main .main-contents ul {
+  padding-left: 0;
+}
+
+#main .main-contents ul li {
+  border-top: 1px solid black;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#main .main-contents ul li:last-child {
+  border-bottom: 1px solid black;
+}
+
+#main .main-contents ul li h2 {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding: 40px 30px;
+}
+
+#main .main-contents ul li .hided-words {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: none;
+}
+
+#main .main-contents ul li .hided-words dt {
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+#main .main-contents ul li .hided-words dd {
+  width: 80%;
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+
+#main .main-contents ul .label {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+}
+
+#main .main-contents ul .label::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 1px;
+  background-color: black;
+  top: 50%;
+  right: 5%;
+}
+
+#main .main-contents ul .label::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 1px;
+  background-color: black;
+  top: 50%;
+  right: 5%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#main .main-contents ul .label:hover {
+  background-color: #ffda5f;
+}
+
+#main .main-contents ul .label.open {
+  background-color: #ffda5f;
+}
+
+#main .main-contents ul .label.open::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/*# sourceMappingURL=main.css.map */
